@@ -175,7 +175,7 @@ public class GameField extends JPanel implements ActionListener {
 
     public void checkCollisions() {
         for (int i = dots; i > 0; i--) {
-            if (i > 4 && x[0] == x[i] && y[0] == y[i]) {
+            if (i >= 3 && x[0] == x[i] && y[0] == y[i]) {
                 inGame = false;
                 break;
             }
